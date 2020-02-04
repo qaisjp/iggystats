@@ -94,9 +94,9 @@ func main() {
 }
 
 var mee6inform = map[string]int{
-	"!ban":     2,
+	"!ban":	 2,
 	"!tempban": 3,
-	"!kick":    2,
+	"!kick":	2,
 }
 
 func (b *bot) onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
@@ -160,9 +160,9 @@ func (b *bot) onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) 
 		b.karmaGet(m.Message, target)
 		return
 	} else if parts[0] == "!mod" {
-        b.requestMod(m.Message, parts[1:])
-        return
-    } else if idx, ok := mee6inform[parts[0]]; ok {
+		b.requestMod(m.Message, parts[1:])
+		return
+	} else if idx, ok := mee6inform[parts[0]]; ok {
 		b.mee6inform(m.Message, parts, idx)
 		return
 	}
