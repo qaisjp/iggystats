@@ -94,7 +94,7 @@ func main() {
 }
 
 var mee6inform = map[string]int{
-	"!ban":	 2,
+	"!ban":		2,
 	"!tempban": 3,
 	"!kick":	2,
 }
