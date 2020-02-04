@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"string"
+	"strings"
 
 	"github.com/bwmarrin/discordgo"
 )

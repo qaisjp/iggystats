@@ -94,9 +94,9 @@ func main() {
 }
 
 var mee6inform = map[string]int{
-	"!ban":		2,
+	"!ban":     2,
 	"!tempban": 3,
-	"!kick":	2,
+	"!kick":    2,
 }
 
 func (b *bot) onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
