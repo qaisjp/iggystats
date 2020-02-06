@@ -18,6 +18,6 @@ func (b *bot) requestMod(m *discordgo.Message, parts []string) {
 		message = strings.Join(parts, " ")
 	}
 	b.discord.ChannelMessageSend(feedChannel, fmt.Sprintf(modRequest, m.Author.ID, m.ChannelID, url, message))
-	b.sendQuickPM(m.Author, fmt.Sprintf(requestRecv, m.Author.ID))
+	b.sendQuickPM(m.Author.ID, fmt.Sprintf(requestRecv, m.Author.ID))
 	b.discord.ChannelMessageDelete(m.ChannelID, m.ID)
 }
